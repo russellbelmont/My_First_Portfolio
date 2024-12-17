@@ -23,3 +23,121 @@ footer {
     padding: 10px 0;
     text-align: center;
 }
+/* Make sure the body and main tags are set up as flex containers */
+body {
+    display: flex;
+    flex-direction: column;  /* Stack header, main, and footer vertically */
+    min-height: 100vh;  /* Ensure body takes up at least the full viewport height */
+}
+
+main {
+    display: flex;
+    flex-direction: row;  /* Arrange article and aside in a row */
+    flex: auto;  /* Make the main content area flexible */
+    width: 100%;  /* Ensure main takes full width */
+}
+
+/* Flexbox for the header and footer to ensure they fit at the top and bottom */
+header, footer {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Article and aside should be set up as flexible boxes as well */
+article {
+    flex: 2;  /* Takes up 2 parts of the space */
+    padding: 20px;
+    overflow-y: auto;  /* Enable vertical scrolling within the article */
+}
+
+aside {
+    flex: 1;  /* Takes up 1 part of the space */
+    padding: 20px;
+    overflow-y: auto;  /* Enable vertical scrolling within the aside */
+}
+/* General Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif; /* A clean font for the website */
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text color for readability */
+}
+
+/* Header Styling */
+header {
+    background-color: #007BFF; /* Blue background for the header */
+    padding: 10px;
+    color: white; /* White text color */
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header li {
+    margin-right: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 32px; /* Make the logo (Unicode) larger */
+    margin-right: 20px;
+    color: yellow; /* Choose a color for the logo */
+}
+
+/* Main Layout Styling */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+article {
+    flex: 2;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the article */
+    border: 1px solid #ddd; /* Light border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    overflow-y: auto;
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9; /* Slightly off-white background for the aside */
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+/* Footer Styling */
+footer {
+    padding: 20px;
+    background-color: #007BFF; /* Same as header */
+    color: white;
+    text-align: center;
+}
+
+/* General Text Styling */
+h2, h3 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #333;
+}
